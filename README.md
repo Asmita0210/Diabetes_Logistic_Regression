@@ -38,7 +38,7 @@ The dataset contains the following key input features along with a binary target
 1. **Libraries**: Uses pandas, numpy, matplotlib, seaborn, and scikit-learn.  
 2. **Exploratory Data Analysis**: Checks dataset shape, data types, null values (df.isnull().sum()), and class balance (df['Outcome'].value_counts()).
 
-    <img src="visualisations/Diabetes_Count.png" alt="Diabetes Count" width="600"/>
+    <img src="visualisations/Diabetes Count.png" alt="Diabetes Count" width="600"/>
 3. **Train-Test Split**: Splitting features (X) and target (y) using an $80/20$ split (test_size=0.2, random_state=42).
 4. **Feature Scaling**: Applies StandardScaler to bring features with varying ranges (e.g., Age vs. Glucose) to a unified scale, aiding faster convergence and stable optimization.
 5. **Model Training & Prediction**: Fits LogisticRegression() on scaled training data and predicts on test set (y_pred = model.predict(X_test)).
@@ -46,7 +46,7 @@ The dataset contains the following key input features along with a binary target
    * **Accuracy Score**: Calculated using accuracy_score(y_test, y_pred).
    * **Confusion Matrix**: Maps True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN). (Note: False Negatives are particularly dangerous in healthcare contexts).
    
-     <img src="visualisations/Confusion_Matrix.png" alt="Confusion Matrix" width="600"/>
+     <img src="visualisations/Confusion Matrix.png" alt="Confusion Matrix" width="600"/>
    * **Classification Report**: Generates precision, recall, F1-score, and support metrics.
 7. **Single Patient Prediction & Probabilities**:
    * Scales sample input data using scaler.transform() before calling model.predict().
