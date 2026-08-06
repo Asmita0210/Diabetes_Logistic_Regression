@@ -5,7 +5,7 @@
 ## Project Overview
 
 **Aim:**
-This is one of the best beginner-friendly and realistic projects to learn:
+A project to implement:
 * Logistic Regression
 * Binary Classification
 * Accuracy
